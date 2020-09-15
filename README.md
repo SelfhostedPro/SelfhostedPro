@@ -15,6 +15,9 @@ I'm just getting started out in the development world but I think it's a pretty 
 
 [![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=SelfhostedPro&repo=Yacht&theme=algolia)](https://github.com/SelfhostedPro/Yacht)
 
+[![Docker Hub Pulls](https://img.shields.io/docker/pulls/selfhostedpro/yacht?color=%234518f5&label=Docker%20Pulls&logo=docker&logoColor=%23403d3d&style=for-the-badge)](https://hub.docker.com/r/selfhostedpro/yacht)
+[![Docker Image Size](https://img.shields.io/docker/image-size/selfhostedpro/yacht/vue?color=%234518f5&label=Image%20Size&logo=docker&logoColor=%23403d3d&style=for-the-badge)](https://hub.docker.com/r/selfhostedpro/yacht)
+
 There's currently not an "App Store" for servers. I don't want to deal with the overhead or responsibility of making one so I'll leave that up to the people but I feel like with a standard format (for now it's json or yaml but I'll be incorporating docker-compose soon) I can enable people to easily create their own and provide a good vehicle/interface to manage them. This is that vehicle.
 
 [![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=SelfhostedPro&repo=selfhosted_templates&theme=algolia)](https://github.com/SelfhostedPro/selfhosted_templates)
