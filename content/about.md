@@ -2,8 +2,6 @@
 title: "About"
 date: 2020-11-05T09:12:58-08:00
 draft: false
-tags:
-  - about
 ---
 
 Welcome to the SelfhostedPro blog. I'm going to be sharing various things from how I setup my homelab to setting up automation for docker images and DigitalOcean marketplace images.

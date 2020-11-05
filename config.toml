@@ -16,10 +16,10 @@ theme = "m10c"
         identifier = "about"
         name = "About"
         url = "/about/"
-    [[menu.main]]
-        identifier = "tags"
-        name = "Tags"
-        url = "/tags/"
+    # [[menu.main]]
+    #     identifier = "tags"
+    #     name = "Tags"
+    #     url = "/tags/"
 [params]
     author = "SelfhostedPro"
     description = "Just trying to help make things easy for people getting into IT. Author of Yacht."
