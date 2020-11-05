@@ -1,0 +1,45 @@
+baseURL = ""
+languageCode = "en-us"
+title = "Selfhosted Pro"
+theme = "m10c"
+
+[menu]
+    [[menu.main]]
+        identifier = "homelab"
+        name = "Homelab"
+        url = "/hl/"
+    [[menu.main]]
+        identifier = "devops"
+        name = "DevOps"
+        url = "/do/"
+    [[menu.main]]
+        identifier = "about"
+        name = "About"
+        url = "/about/"
+    [[menu.main]]
+        identifier = "tags"
+        name = "Tags"
+        url = "/tags/"
+[params]
+    author = "SelfhostedPro"
+    description = "Just trying to help make things easy for people getting into IT. Author of Yacht."
+    menu_item_separator = " | "
+    avatar = "images/profile.png"
+    [[params.social]]
+        name = "github"
+        url = "https://github.com/SelfhostedPro"
+    [[params.social]]
+        name = "twitter"
+        url  = "https://twitter.com/gohugoio"
+    [[params.social]]
+        name = "youtube"
+        url  = "https://youtube.com/c/SelfhostedPro"
+    [[params.social]]
+        name = "discord"
+        url  = "https://discord.gg/KpKutvC"
+[params.style]
+  darkestColor = "#047F9E"
+  darkColor = "#04416E"
+  lightColor = "#CAD7E1"
+  lightestColor = "#f5f5f5"
+  primaryColor = "#fff"
