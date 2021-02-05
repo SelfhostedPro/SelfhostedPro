@@ -26,3 +26,10 @@ If you're using something like Authelia, you should disable authentication withi
 Now that we've got the initial installation complete lets move into setting up the app.
 
 # Setup
+
+Yacht should be accessible at `https://ip.of.server:8000`. Login with the default credentials `admin@yacht.local` and `pass`. Click on your username in the top right and go to the user settings to change your username and password.
+
+Once you're done with that, click on `Server Settings` on the left sidebar. Then go to the `Template Variables` tab. Here you can set the variables that are used in templates and add new ones.
+
+Once those are set, go to the templates tab on the left and add the default template. Once you're ready to go, go back to `Server Settings` and export your configuration so if you need to re-install yacht for any reason you can automatically populate your settings and templates.
+
