@@ -19,7 +19,7 @@ This will launch Yacht and forward port 8000 on your host to it. It also mounts 
 
 We deviate from the official instructions here so that we can easily add and modify more complex docker-compose projects. 
 
-There are some additional options you can add with `-E` in [this table](https://github.com/selfhostedpro/yacht#supported-environment-variables). Some additional options are `THEME` where you can select from `RED`, `OMV`, `DigitalOcean`, and `Default`. You can also change the logo by setting the `LOGO` environment variable to a URL that's hosting your image.
+There are some additional options you can add with `-E` in **[this table](https://github.com/selfhostedpro/yacht#supported-environment-variables)**. Some additional options are `THEME` where you can select from `RED`, `OMV`, `DigitalOcean`, and `Default`. You can also change the logo by setting the `LOGO` environment variable to a URL that's hosting your image.
 
 If you're using something like Authelia, you should disable authentication within yacht by setting `DISABLE_AUTH` to `True`.
 
