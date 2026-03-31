@@ -1,27 +1,29 @@
 name: Update README cards
 
+permissions:
+  contents: write
+
 on:
   schedule:
     - cron: "0 3 * * *"
   workflow_dispatch:
 
 jobs:
-  build:
+  generate-cards:
+    name: Generate ${{ matrix.card }}${{ matrix.id && format(' ({0})', matrix.id) }} Card
     strategy:
       matrix:
         include:
           - card: stats
             options: username=${{ github.repository_owner }}&show_icons=true&theme=algolia
-            path: profile/stats.svg
           - card: top-langs
             options: username=${{ github.repository_owner }}&theme=algolia
-            path: profile/top-langs.svg
-          - card: pin
+          - id: yacht
+            card: pin
             options: username=${{ github.repository_owner }}&repo=Yacht&theme=algolia
-            path: profile/pin-yacht.svg
-          - card: pin
+          - id: selfhosted-templates
+            card: pin
             options: username=${{ github.repository_owner }}&repo=selfhosted_templates&theme=algolia
-            path: profile/pin-selfhosted-templates.svg
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -31,8 +33,29 @@ jobs:
         with:
           card: ${{ matrix.card }}
           options: ${{ matrix.options }}
-          path: ${{ matrix.path }}
+          path: profile/${{ matrix.card }}${{ matrix.id && format('-{0}', matrix.id) }}.svg
           token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload generated card
+        uses: actions/upload-artifact@v4
+        with:
+          name: card-${{ matrix.card }}${{ matrix.id && format('-{0}', matrix.id) }}
+          path: profile/${{ matrix.card }}${{ matrix.id && format('-{0}', matrix.id) }}.svg
+
+  commit-cards:
+    needs: generate-cards
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Download all generated cards
+        uses: actions/download-artifact@v4
+        with:
+          pattern: card-*
+          merge-multiple: true
+          path: ./profile/
 
       - name: Commit cards
         run: |
@@ -40,4 +63,5 @@ jobs:
           git config user.email "github-actions@users.noreply.github.com"
           git add profile/*.svg
           git commit -m "Update README cards" || exit 0
+          git pull --rebase origin ${{ github.ref_name }}
           git push

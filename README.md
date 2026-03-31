@@ -7,7 +7,7 @@
 [![GitHub followers](https://img.shields.io/github/followers/SelfhostedPro?color=%234518f5&logo=github&logoColor=%23403d3d&style=for-the-badge)](https://github.com/users/follow?target=SelfhostedPro)
 [![Email](https://img.shields.io/badge/Email-info%40selfhosted.pro-234518f?color=%234518f5&logo=gmail&logoColor=%23403d3d&style=for-the-badge)](mailto:info@selfhosted.pro)
 ---
-I'm just getting started out in the development world but I think it's a pretty good start. I started learning python in Febuary of 2020 and since being in quarantine I've built some great projects using Vue, Flask (python), and FastAPI (python).
+I'm a senior DevOps engineer with 12 years of IT experience, including 6 years focused on DevOps. I specialize in Kubernetes, GitOps, Argo CD, Infrastructure as Code (Terraform), GitHub Actions, and CI/CD, with a strong focus on automation and reliability.
 
 [![Top Langs](./profile/top-langs.svg)](https://github.com/SelfhostedPro)
 
