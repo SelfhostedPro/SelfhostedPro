@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">SelfhostedPro's GitHub Stats, Rank: A-</title>
-        <desc id="descId">Total Stars Earned: 1654, Total Commits  (last year) : 13, Total PRs: 479, Total Issues: 140, Contributed to (last year): 10</desc>
+        <desc id="descId">Total Stars Earned: 1655, Total Commits  (last year) : 13, Total PRs: 479, Total Issues: 140, Contributed to (last year): 9</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 64.6388717978758;
+        stroke-dashoffset: 64.63743003235432;
       }
     }
   
@@ -222,7 +222,7 @@
         x="219.01"
         y="12.5"
         data-testid="contribs"
-      >10</text>
+      >9</text>
     </g>
   </g>
     </svg>
